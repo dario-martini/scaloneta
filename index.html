@@ -34,11 +34,11 @@
 
     </nav>
 
-    <div>
+    <div class="colectivo">
         <div class="conductor">
             <div class="conductor--caja--luces">
-                <div class="conductor--luces"></div>
-                <div class="conductor--luces"></div>
+                <div class="conductor--luces luces--i"></div>
+                <div class="conductor--luces luces--d"></div>
             </div>
             <div class="caja--tecnico">
                 <div class="tecnico"><img src="img/scaloni.jpg" alt="tecnico" class="img-tecnico"></div>
@@ -46,9 +46,9 @@
             </div>
 
             <div class="conductor--botones">
-                <input class="boton--luz botonbus" type="submit" value="LUCES">
-                <input class="boton--musica botonbus" type="submit" value="MUSICA">
-                <input class="boton--encender botonbus" type="submit" value="ENCENDER">
+                <input class="boton--luz botonbus" type="submit" onclick="iluminar()" value="LUCES">
+                <input class="boton--musica botonbus" type="submit" onclick="reproducir()" value="MUSICA">
+                <input class="boton--encender botonbus" type="submit" onclick="movimiento()" value="ENCENDER">
             </div>
         </div>
         <div class="pasajeros">

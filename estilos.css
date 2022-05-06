@@ -58,7 +58,6 @@ img {
     background-color: yellow;
     width: 5vw;
     height: 5vh;
-
 }
 .conductor--caja--luces {
     display: flex;
@@ -134,4 +133,14 @@ a {
 }
 .bandera {
    border: solid 1px black;
+}
+.luces--d {
+    border-top-right-radius: 50%;
+    margin-top: -10px;
+    margin-right: -10px;
+}
+.luces--i {
+    border-top-left-radius: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
 }

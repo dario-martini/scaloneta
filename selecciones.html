@@ -33,37 +33,62 @@
         </div>
 
     </nav>
+    <div class="reglas" onclick="reglas()">Como se Juega??<br>Click Aqui</div>
     <div class="caja-selecciones-1">
         <div class="caja-selecciones">
-            <div class="selecciones"><img src="img/banderas/portugal.jpg" alt="bandera" class="bandera"><input type="text" class="input-seleccion">
-            <input type="submit" value="OK" class="ok-selecciones"></div>
-            <div class="selecciones"><img src="img/banderas/alemania.jpg" alt="bandera" class="bandera"><input type="text" class="input-seleccion">
-            <input type="submit" value="OK" class="ok-selecciones"></div>
-            <div class="selecciones"><img src="img/banderas/brasil.png" alt="bandera" class="bandera"><input type="text" class="input-seleccion">
-            <input type="submit" value="OK" class="ok-selecciones"></div>
-            <div class="selecciones"><img src="img/banderas/egipto.jpg" alt="bandera" class="bandera"><input type="text" class="input-seleccion">
-            <input type="submit" value="OK" class="ok-selecciones"></div>
-            <div class="selecciones"><img src="img/banderas/francia.png" alt="bandera" class="bandera"><input type="text" class="input-seleccion">
-            <input type="submit" value="OK" class="ok-selecciones"></div>
+            <div class="selecciones"><img src="img/banderas/portugal.jpg" alt="bandera" class="bandera"><input
+                    id="band0" type="text" class="input-seleccion">
+            </div>
+            <div class="selecciones"><img src="img/banderas/alemania.jpg" alt="bandera" class="bandera"><input
+                    id="band1" type="text" class="input-seleccion">
+            </div>
+            <div class="selecciones"><img src="img/banderas/brasil.png" alt="bandera" class="bandera"><input id="band2"
+                    type="text" class="input-seleccion">
+            </div>
+            <div class="selecciones"><img src="img/banderas/egipto.jpg" alt="bandera" class="bandera"><input id="band3"
+                    type="text" class="input-seleccion">
+            </div>
+            <div class="selecciones"><img src="img/banderas/francia.png" alt="bandera" class="bandera"><input id="band4"
+                    type="text" class="input-seleccion">
+            </div>
         </div>
         <div class="caja-selecciones">
-            <div class="selecciones"><img src="img/banderas/japon.jpg" alt="bandera" class="bandera"><input type="text" class="input-seleccion">
-            <input type="submit" value="OK" class="ok-selecciones"></div>
-            <div class="selecciones"><img src="img/banderas/panama.png" alt="bandera" class="bandera"><input type="text" class="input-seleccion">
-            <input type="submit" value="OK" class="ok-selecciones"></div>
-            <div class="selecciones"><img src="img/banderas/senegal.png" alt="bandera" class="bandera"><input type="text" class="input-seleccion">
-            <input type="submit" value="OK" class="ok-selecciones"></div>
-            <div class="selecciones"><img src="img/banderas/suecia.png" alt="bandera" class="bandera"><input type="text" class="input-seleccion">
-            <input type="submit" value="OK" class="ok-selecciones"></div>
-            <div class="selecciones"><img src="img/banderas/uruguay.png" alt="bandera" class="bandera"><input type="text" class="input-seleccion">
-            <input type="submit" value="OK" class="ok-selecciones"></div>
+            <div class="selecciones"><img src="img/banderas/japon.jpg" alt="bandera" class="bandera"><input id="band5"
+                    type="text" class="input-seleccion">
+            </div>
+            <div class="selecciones"><img src="img/banderas/panama.png" alt="bandera" class="bandera"><input id="band6"
+                    type="text" class="input-seleccion">
+            </div>
+            <div class="selecciones"><img src="img/banderas/senegal.png" alt="bandera" class="bandera"><input id="band7"
+                    type="text" class="input-seleccion">
+            </div>
+            <div class="selecciones"><img src="img/banderas/suecia.png" alt="bandera" class="bandera"><input id="band8"
+                    type="text" class="input-seleccion">
+            </div>
+            <div class="selecciones"><img src="img/banderas/uruguay.png" alt="bandera" class="bandera"><input id="band9"
+                    type="text" class="input-seleccion">
+            </div>
         </div>
     </div>
-    <div class="resultado--selecciones">
+
+    <div class="resultado--selecciones" onclick="banderas()">
         RESULTADO DEL JUEGO
     </div>
+    <div class="nom-selecc" id="selecciones-nombre0"></div>
+    <div class="nom-selecc" id="selecciones-nombre1"></div>
+    <div class="nom-selecc" id="selecciones-nombre2"></div>
+    <div class="nom-selecc" id="selecciones-nombre3"></div>
+    <div class="nom-selecc" id="selecciones-nombre4"></div>
+    <div class="nom-selecc" id="selecciones-nombre5"></div>
+    <div class="nom-selecc" id="selecciones-nombre6"></div>
+    <div class="nom-selecc" id="selecciones-nombre7"></div>
+    <div class="nom-selecc" id="selecciones-nombre8"></div>
+    <div class="nom-selecc" id="selecciones-nombre9"></div>
+    <footer>DARIO MARTINI</footer>
 
+    <script src="javascript.js"></script>
     <script src="js.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>

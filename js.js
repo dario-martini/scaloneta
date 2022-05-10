@@ -46,14 +46,11 @@ let izquierda = 0;
 let derecha = 0;
 let velocidad = 10;
 const colectivo = document.querySelector(".colectivo");
-//console.log (colectivo);
-//for (i=0; i==10; i++);
-//let barraBrava = 0;
 let pasaje = 0;
 let parar = 0;
 
 const movimiento = () => {
-    if (parar <= 15) {
+    if (parar <= 5) {
         izquierda += velocidad;
         colectivo.style.marginLeft = izquierda + "px";
         izquierda -= velocidad;
@@ -81,7 +78,7 @@ const regresar = () => {
 
 }
 
-//--------------------------------------------------------JUGADORES---------------------------------------------------------------------
+//--------------------------------------------------------JUGADORES PRUEBA---------------------------------------------------------------
 /*
 const jugadoresElegidos = [
     { nombre: "messi", numero: 10, puntos: document.querySelector(".ju-13").src},
@@ -122,7 +119,7 @@ console.log(arquero1);}*/
 
 /*
 const messi = (hola) => { let messi = jugadoresElegidos[0]; let jugDos = messi.puntos;
-console.log(messi);*//*jug01.innerHTML = document.querySelector(".ju-1"); *//*swal("Buena elección!", "El mejor jugador del Mundo!!", "success");
+console.log(messi);*//*jug01.innerHTML = document.querySelector(".ju-1"); *//*
 }
 
 
@@ -132,53 +129,7 @@ const tecnico = () => {
 
 */
 //let jug01 = document.querySelector(".jugador-seleccionado1");
-
-//let sexoTecnico = prompt ("Eres Hombre o Mujer?");
-//let nombreTecnico = prompt("Como te llamas?");
 /*
-const divJugadores = document.querySelector(".jugador-seleccionado1")
-
-const seleccionar = document.querySelectorAll(".jugador");
-seleccionar.forEach((agregarJug) => {
-
-    agregarJug.addEventListener('click', agregado);
-}
-);
-function agregado (event) {
-    const boton = event.target;
-    const item = boton.closest(".jugador");
-    const itemPuntos = item.querySelector(".puntajes").innerHTML;
-    const itemImagen = item.querySelector(".ficha-jugador").src;
-   itemImagenes (itemImagen, itemPuntos);
-}
- function itemImagenes (itemImagen, itemPuntos) {
-    const cajaJugJs = document.createElement('div')
-    const contenidoJug = 
-    `
-    <div class="lista">
-            <div class="jugadores--js">
-                <img src=${itemImagen}>
-            </div>
-            <div class="borrar--jug">
-                <button class="boton-borrar">
-                    X
-                </button>
-
-            </div>
-        </div>
-    `
-    cajaJugJs.innerHTML = contenidoJug;
-    divJugadores.append(cajaJugJs);
-
-    valorPoder (itemPuntos);
-    
-  
-  /*
-  
-  let puntosTotales = Number(itemPuntos);
-  
-  *//*
- }
 let totalPuntos = Number (document.querySelector(".total-p").value);
 let puntosSumados = totalPuntos + totalPuntosSumados 
  function valorPoder (itemPuntos) {
@@ -186,4 +137,33 @@ let puntosSumados = totalPuntos + totalPuntosSumados
      let totalPuntaje = totalPuntos + total;
      console.log (totalPuntaje);
  }*/
+
+//---------------------------------------------------TECNICO---------------------------------------------------------------------
+
+
+let tecnicoUsuario = document.getElementById("tecnico-usuario");
+
+function tecnico() {
+    let nombreTecnico = prompt("HOLA, COMO TE LLAMAS?");
+    while (nombreTecnico == "") {
+        alert("POR FAVOR, INGRESE SU NOMBRE")
+        nombreTecnico = prompt("HOLA, COMO TE LLAMAS?");
+    }
+    if (nombreTecnico != "") {
+        alert("HOLA " + nombreTecnico + " SOS EL NUEVO INTEGRANTE DE LA SCALONETA")
+        tecnicoUsuario.innerHTML = nombreTecnico;
+    }
+    swal("Bienvenido a la Scaloneta ", "Podras encender las luces de la Scaloneta, encender la musica o ¡¡¡PONERLA EN MARCHAA!!, tambien seleccionar a tus 5 jugadores preferidos..");
+}
+function messi() {
+    swal("Buena elección!", "El mejor jugador del Mundo!!", "success");
+}
+function dibu() {
+    swal("Buena elección!", "El mejor arquero del Mundo!!", "success");
+}
+
+
+
+
+
 

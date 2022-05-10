@@ -149,6 +149,7 @@ a {
     margin-left: -10px;
 }
 .total-p {
+    color: white;
     width: 50%;
     margin: auto;
 }
@@ -156,3 +157,18 @@ a {
 .puntajes{
     display: none;
 }
+.nom-selecc{
+    margin-top: 20px;
+    font-size: xx-large;
+    text-align: center;
+}
+.reglas {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 20%;
+    margin-left: 40%;
+    height: 10vh;
+    padding-top: 1vh;
+    font-size: 20px;
+ }

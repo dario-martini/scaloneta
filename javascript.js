@@ -27,31 +27,11 @@ function itemImagenes(itemImagen, itemPuntos) {
     cajaJugJs.innerHTML = contenidoJug;
     divJugadores.append(cajaJugJs);
 
-    //valorPoder(itemPuntos);
-
 }
 
 
-/*
-function valorPoder(itemPuntos) {
-    for (i = 0 ; i<5 ; i++) {
-        const array1 = Number(itemPuntos);
-const initialValue = 0;
-const puntosSumados = array1 + initialValue;
-
-console.log(puntosSumados);
-
-totalPoder.innerHTML = puntosSumados;
-    }
-    
-    
-}
-const totalPoder = document.querySelector(".total-p");
-
-*/
 //---------------------------------------------------BANDERAS--------------------------------------------------------------------------
 
-//const nombrePaises = document.querySelectorAll(".input-seleccion").value;
 let seleccionesNombre0 = document.getElementById("selecciones-nombre0");
 let seleccionesNombre1 = document.getElementById("selecciones-nombre1");
 let seleccionesNombre2 = document.getElementById("selecciones-nombre2");

@@ -171,3 +171,120 @@ a {
     padding-top: 1vh;
     font-size: 20px;
  }
+
+     
+ .grupos{
+     display: grid;
+     grid-template-rows: 1fr 1fr;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+ .cada-grupo {
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     height: 150px;
+     background-color: black;
+     color: white;
+     margin: 20px;
+    list-style: none;
+ }
+ .selecciones-grupo {
+     width: 24vw;
+     display: flex;
+     flex-direction: column;
+ }
+ .cada-seleccion {
+    border: solid 1px white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ .octavos {
+     display: grid;
+     grid-template-rows: 1fr 1fr 1fr 1fr;
+     grid-template-columns: 1fr 1fr;
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
+ .partidos-ocatavos {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 10px;
+ }
+ 
+
+ .texto-grupos{
+     width: 200px;
+     height: 25px;
+     background-color: black;
+     color: white;
+ }
+ .cuartos {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     margin-bottom: 50px;
+ }
+ .partidos-cuartos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+ }
+ .texto-cuartos {
+    width: 200px;
+    height: 25px;
+    background-color: black;
+    color: white;
+ }
+ .semi {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 50px;
+}
+.partidos-semi {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 10px;
+}
+.texto-semi {
+   width: 200px;
+   height: 25px;
+   background-color: black;
+   color: white;
+}
+.fase-final {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 50px;
+}
+.final {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 10px;
+}
+.texto-final {
+   width: 200px;
+   height: 25px;
+   background-color: black;
+   color: white;
+}
+.p-f {
+    display: flex;
+}
+.campeon {
+    margin: auto;
+    width: 200px;
+    height: 25px;
+    background-color: black;
+    color: white;
+}
+.input {
+    width: 20px;
+}

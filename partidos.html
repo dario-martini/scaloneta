@@ -98,6 +98,16 @@
             <input class="clasificacion" type="submit" value="Posicionar" onclick="posicionarGrupos()">
 
         </div>
+        <div class="explicaciones">
+            <h1>FIXTURE</h1>
+            <h3>Hola!, falta poco para el mundial y vamos a comenzar con las apuestas!!..
+            </h3>
+            <p>
+                En el cuadro de arriva deberas colocar en que posicion crees que terminara cada equipo luego de los 3
+                partidos de la fase de grupos, agregando en cada cuadro un numero del 1 al 4, luego haz click en el
+                boton "Posicionar" para continuar.
+            </p>
+        </div>
         <div class="octavos" id="octavos">
             <div class="partidos-ocatavos">
                 <p class="texto-grupos aa" onclick="clasificacionCuartos1 ()"></p><span>VS</span>
@@ -133,6 +143,13 @@
             </div>
 
         </div>
+        <div class="explicaciones">
+            <h2>OCTAVOS DE FINAL..</h2>
+            <h3>
+                Llegamos a la fase de octavos, aqui deberas hacer click en cada equipo que creas que ganara su partido y
+                pasara a la siguiente fase!.
+            </h3>
+        </div>
         <div class="cuartos" id="cuartos">
             <div class="partidos-cuartos">
                 <p class="texto-cuartos" onclick="semis1 ()"></p><span>VS</span>
@@ -151,6 +168,11 @@
                 <p class="texto-cuartos" onclick="semis8 ()"></p>
             </div>
         </div>
+        <div class="explicaciones">
+            <h2>CUARTOS DE FINAL</h2>
+            <h3>Aqui el mecanismo es similar al de octavos de final, tienes que hacer click en los 4 equipos que
+                llegaran a las SEMIFINALES!.</h3>
+        </div>
         <div class="semi" id="semi">
             <div class="partidos-semi">
                 <p class="texto-semi"></p><input type="text" class="input-semi"><span>VS</span>
@@ -162,24 +184,38 @@
             </div>
 
         </div>
-        <input type="submit" value="Clasificacion" class="clasificacion" style="margin-bottom: 20px;"  onclick="clasificacionSemi ()">
+        <input type="submit" value="Clasificacion" class="clasificacion" style="margin-bottom: 20px;"
+            onclick="clasificacionSemi ()">
+        <div class="explicaciones">
+            <h2>SEMIFINALES!!</h2>
+            <h3>Solo los 4 mejores equipos del mundo estan en esta zona, y ya la decision es mas dificil, por lo tanto
+                tambien tienes que volverte un profesional y arriesgar el resultado de cada partido, luego haz click en
+                el boton "clasificacion" para llegar a la final!.</h3>
+        </div>
         <div class="fase-final" id="fase-final">
             <div class="tercero final" id="tecero">
                 <div class="partido-tercero p-f">
-                    <p class="texto-tercero tercero1 texto-final"></p><span>VS</span>
-                    <p class="texto-tercero tercero2 texto-final"></p>
+                    <p class="texto-tercero tercero1 texto-final"></p><input type="text"
+                        class="input-final"><span>VS</span>
+                    <p class="texto-tercero tercero2 texto-final"></p><input type="text" class="input-final">
                 </div>
             </div>
             <div class="final" id="final">
                 <div class="partido-final p-f">
-                    <p class="texto-final finalista1"></p><span>VS</span>
-                    <p class="texto-final finalista2"></p>
+                    <p class="texto-final finalista1"></p><input type="text" class="input-final"><span>VS</span>
+                    <p class="texto-final finalista2"></p><input type="text" class="input-final">
                 </div>
             </div>
 
 
         </div>
+        <div class="explicaciones">
+            <h2>Final!!</h2>
+            <h3>Debes arriesgar los resultados de la final como tambien del partido por el tercer y cuarto puesto, luego
+                reclama la copa para ver el podio!, gracias por participar.</h3>
+        </div>
         <div class="campeon"><button style="width: 100%; height:100%;">Reclamar la Copa</button></div>
+        <div style="background-color: red;"><h2>Estoy trabajando en la libreria para el podio, por eso no esta aun funcionando.</h2></div>
 
 
     </main>

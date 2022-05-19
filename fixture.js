@@ -209,3 +209,38 @@ function clasificacionSemi() {
     semifinalista1 == semifinalista2 && alert("El partido no puede terminar en empate"); 
     semifinalista3 == semifinalista4 && alert("El partido no puede terminar en empate");
 }
+
+//--------------------------------------------------FINAL----------------------------------------------------------------
+
+let resultadoFinal = document.querySelectorAll(".input-final");
+//console.log(resultadoFinal);
+function finalPartido () {
+    let equipoFinalista1 = Number(resultadoFinal[2].value);
+    let equipoFinalista2 = Number(resultadoFinal[3].value);
+    let equipoTyc1 = Number(resultadoFinal[0].value);
+    let equipoTyc2 = Number(resultadoFinal[1].value);
+    let campeonMundial = 0;
+    let segundoPuesto = 0;
+    let tercerPuesto = 0;
+    //console.log(equipoFinalista1,equipoFinalista2,equipoTyc1,equipoTyc2);
+    equipoFinalista1 > equipoFinalista2 ? campeonMundial = puestoFinal1.innerText : segundoPuesto = puestoFinal1.innerText;
+    equipoFinalista1 < equipoFinalista2 ? campeonMundial = puestoFinal2.innerText : segundoPuesto = puestoFinal2.innerText;
+    equipoFinalista1 == equipoFinalista2 && alert("El partido no puede terminar en empate");
+    equipoTyc1 > equipoTyc2 ? tercerPuesto = puestoTercero1.innerText : tercerPuesto = puestoTercero2.innerText;
+    equipoTyc1 == equipoTyc2  && alert("El partido no puede terminar en empate");
+
+    alertaCampeon(campeonMundial, segundoPuesto, tercerPuesto);
+    
+}
+
+const alertaCampeon = (campeonMundial, segundoPuesto, tercerPuesto) => {
+    Swal.fire({
+        title: `El Campeon es ${campeonMundial}`,
+        text: `El Segundo puesto es ${segundoPuesto}, y el Tercero ${tercerPuesto}`,
+        imageUrl: 'img/copa.jpg',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+      }) 
+}
+

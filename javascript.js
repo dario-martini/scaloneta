@@ -3,7 +3,7 @@ const divJugadores = document.querySelector(".jugador-seleccionado1")
 
 const seleccionar = document.querySelectorAll(".jugador");
 seleccionar.forEach((agregarJug) => {
-
+    
     agregarJug.addEventListener('click', agregado);
 }
 );

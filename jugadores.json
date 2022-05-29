@@ -1,0 +1,25 @@
+
+    [
+    { "nombre": "messi", "numero": 10},
+    { "nombre": "aguero", "numero": 11},
+    { "nombre": "dibu", "numero": 12},
+    { "nombre": "armani", "numero": 1},
+    { "nombre": "otamendi", "numero": 4},
+    { "nombre": "romero", "numero": 3},
+    { "nombre": "floyth", "numero": 2},
+    { "nombre": "acuna", "numero": 8},
+    { "nombre": "correa", "numero": 13},
+    { "nombre": "alvarez", "numero": 14},
+    { "nombre": "correa1", "numero": 7},
+    { "nombre": "depaul", "numero": 5},
+    { "nombre": "tagliafico", "numero": 6},
+    { "nombre": "molina", "numero": 15},
+    { "nombre": "martinez", "numero": 16},
+    { "nombre": "dimaria", "numero": 9},
+    { "nombre": "dybala", "numero": 17},
+    { "nombre": "gomez", "numero": 18},
+    { "nombre": "rojo", "numero": 19},
+    { "nombre": "locelso", "numero": 20},
+    { "nombre": "paredes", "numero": 21},
+    { "nombre": "montiel", "numero": 22}
+]

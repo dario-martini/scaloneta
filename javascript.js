@@ -134,3 +134,12 @@ function reglas() {
             }
         });
 }
+
+fetch('jugadores.json')
+.then ( (resp) => resp.json() )
+.then ( (data) => {
+    data.forEach ((post) => {
+        console.log(post)
+    })
+} );
+

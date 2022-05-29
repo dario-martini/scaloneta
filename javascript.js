@@ -1,18 +1,24 @@
 
 const divJugadores = document.querySelector(".jugador-seleccionado1")
-
+let i = 0;
 const seleccionar = document.querySelectorAll(".jugador");
+let totalDiv = document.querySelector(".total-p")
+
 seleccionar.forEach((agregarJug) => {
-    
     agregarJug.addEventListener('click', agregado);
 }
 );
 function agregado(event) {
-    const boton = event.target;
+    if (i<=4) {
+        const boton = event.target;
     const item = boton.closest(".jugador");
-    const itemPuntos = [item.querySelector(".puntajes").innerHTML];
+    const itemPuntos = Number(item.querySelector(".puntajes").innerText);
     const itemImagen = item.querySelector(".ficha-jugador").src;
     itemImagenes(itemImagen, itemPuntos);
+    }
+    else {
+        alert("la lista esta completa")
+    }
 }
 function itemImagenes(itemImagen, itemPuntos) {
     const cajaJugJs = document.createElement('div')
@@ -23,11 +29,15 @@ function itemImagenes(itemImagen, itemPuntos) {
                 <img src=${itemImagen}>
             </div>
         </div>
-    `
+    `;
     cajaJugJs.innerHTML = contenidoJug;
     divJugadores.append(cajaJugJs);
+    
+    totalDiv.innerHTML = itemPuntos;
 
+    i++;
 }
+
 
 
 //---------------------------------------------------BANDERAS--------------------------------------------------------------------------

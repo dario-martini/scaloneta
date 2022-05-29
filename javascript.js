@@ -139,7 +139,6 @@ fetch('jugadores.json')
 .then ( (resp) => resp.json() )
 .then ( (data) => {
     data.forEach ((post) => {
-        //console.log(post)
         const Lista = document.createElement('li');
         Lista.innerHTML = `
         <h3>${post.nombre}<h3>

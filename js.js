@@ -18,8 +18,8 @@ const iluminar = () => {
         luces = true;
     }
     else {
-        lampara.style.backgroundColor = "yellow";
-        lamparaD.style.backgroundColor = "yellow";
+        lampara.style.backgroundColor = "white";
+        lamparaD.style.backgroundColor = "white";
         luces = false;
     }
 }

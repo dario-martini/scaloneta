@@ -7,11 +7,12 @@
     height: 100%;
   }
   body {
-      background-color: white;
+      background-color: rgb(0, 0, 0);
   }
 .navegador--img {
     width: 100%;
 }
+
 
 img {
     width: 100%;
@@ -34,7 +35,7 @@ img {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .conductor {
-    
+    border: solid 2px white;
     margin-top: 50px;
     width: 50vw;
     height: 200px;
@@ -50,6 +51,7 @@ img {
     background-color: aqua;
 }
 .trasera {
+    border: solid 2px white;
     width: 50vw;
     margin-left: 25vw;
     height: 70px;
@@ -57,7 +59,7 @@ img {
     margin-bottom: 10vh;
 }
 .conductor--luces {
-    background-color: yellow;
+    background-color: white;
     width: 5vw;
     height: 5vh;
 }
@@ -67,6 +69,14 @@ img {
 }
 .divisiones--pasajeros--pasillo {
     background-color: white;
+    border: solid 1px black;
+}
+.jugador-seleccionado1 {
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 .tecnico {
     margin: auto;

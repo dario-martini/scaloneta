@@ -304,3 +304,13 @@ a {
      margin-top:10px;
      margin-bottom: 20px;
 }
+.listado-ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.listado-ul li {
+    border: solid 2px black;
+    background-color: aqua;
+}

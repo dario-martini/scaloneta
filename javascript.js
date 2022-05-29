@@ -134,12 +134,18 @@ function reglas() {
             }
         });
 }
-
+const listado = document.querySelector(".listado-ul");
 fetch('jugadores.json')
 .then ( (resp) => resp.json() )
 .then ( (data) => {
     data.forEach ((post) => {
-        console.log(post)
-    })
+        //console.log(post)
+        const Lista = document.createElement('li');
+        Lista.innerHTML = `
+        <h3>${post.nombre}<h3>
+        <h3>${post.numero}<h3>
+        `;
+        listado.append(Lista);
+    });
 } );
 

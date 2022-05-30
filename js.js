@@ -1,4 +1,4 @@
-
+alert ("Bienvenido/a, haz click en el Avatar para informarte como funciona la Scaloneta, que te diviertas!");
 //-------------------------------------LUCES DE LA SCALONETA------------------------------------------------
 
 
@@ -126,7 +126,7 @@ function tecnico() {
         alert("HOLA " + nombreTecnico + " SOS EL NUEVO INTEGRANTE DE LA SCALONETA")
         tecnicoUsuario.innerHTML = nombreTecnico;
     }
-    swal("Bienvenido a la Scaloneta ", "Podras encender las luces de la Scaloneta, encender la musica o ¡¡¡PONERLA EN MARCHAA!!, tambien seleccionar a tus 5 jugadores preferidos..");
+    swal("Bienvenido a la Scaloneta ", "Podras encender las luces de la Scaloneta, encender la musica o ¡¡¡PONERLA EN MARCHAA!!, tambien seleccionar a tus 5 jugadores preferidos para jugar un partido");
 }
 function messi() {
     swal("Buena elección!", "El mejor jugador del Mundo!!", "success");

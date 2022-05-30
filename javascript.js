@@ -1,6 +1,7 @@
 
 const divJugadores = document.querySelector(".jugador-seleccionado1")
 let i = 0;
+let total = 0;
 const seleccionar = document.querySelectorAll(".jugador");
 let totalDiv = document.querySelector(".total-p")
 
@@ -33,10 +34,28 @@ function itemImagenes(itemImagen, itemPuntos) {
     cajaJugJs.innerHTML = contenidoJug;
     divJugadores.append(cajaJugJs);
     
-    totalDiv.innerHTML = itemPuntos;
-
     i++;
+    total += itemPuntos;
+     totalDiv.innerHTML = total;
 }
+function armar5() {
+    if (i==5) {
+        if (total == 500 ) {
+        swal("Excelente", "Tienes el equipo perfecto", "success");
+    }
+    else if (total>=460 && total<500) {
+        swal("Muy Bien", "Tienes un gran equipo", "success");
+    }
+    else {
+        swal("Brasil te hace 10", "Estas fuera del torneo", "error");
+    }
+    }
+    else{
+        alert("Debes elegir a todos tus jugadores")
+    }
+    
+}
+ 
 
 
 

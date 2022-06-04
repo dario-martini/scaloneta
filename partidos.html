@@ -30,6 +30,16 @@
         </div>
     </nav>
     <main class="contenedor-grupos" id="contenedor-grupos">
+        <div class="explicaciones">
+            <h1>FIXTURE</h1>
+            <h3>Hola!, falta poco para el mundial y vamos a comenzar con las apuestas!!..
+            </h3>
+            <p>
+                En el cuadro de arriva deberas colocar en que posicion crees que terminara cada equipo luego de los 3
+                partidos de la fase de grupos, agregando en cada cuadro un numero del 1 al 4, luego haz click en el
+                boton "Posicionar" para continuar.
+            </p>
+        </div>
         <div class="grupos" id="grupos">
             <div class="selecciones-grupo">
                 <ul class="cada-grupo">
@@ -95,19 +105,17 @@
                     <li class="cada-seleccion">COREA <input class="input ze" type="text"></li>
                 </ul>
             </div>
-            <input class="clasificacion" type="submit" value="Posicionar" onclick="posicionarGrupos()">
+            <input class="clasificacion" style="background-color: blue;" type="submit" value="Posicionar" onclick="posicionarGrupos()">
 
         </div>
         <div class="explicaciones">
-            <h1>FIXTURE</h1>
-            <h3>Hola!, falta poco para el mundial y vamos a comenzar con las apuestas!!..
+            <h2>OCTAVOS DE FINAL..</h2>
+            <h3>
+                Llegamos a la fase de octavos, aqui deberas hacer click en cada equipo que creas que ganara su partido y
+                pasara a la siguiente fase!.
             </h3>
-            <p>
-                En el cuadro de arriva deberas colocar en que posicion crees que terminara cada equipo luego de los 3
-                partidos de la fase de grupos, agregando en cada cuadro un numero del 1 al 4, luego haz click en el
-                boton "Posicionar" para continuar.
-            </p>
         </div>
+        
         <div class="octavos" id="octavos">
             <div class="partidos-ocatavos">
                 <p class="texto-grupos aa" onclick="clasificacionCuartos1 ()"></p><span>VS</span>
@@ -144,12 +152,11 @@
 
         </div>
         <div class="explicaciones">
-            <h2>OCTAVOS DE FINAL..</h2>
-            <h3>
-                Llegamos a la fase de octavos, aqui deberas hacer click en cada equipo que creas que ganara su partido y
-                pasara a la siguiente fase!.
-            </h3>
+            <h2>CUARTOS DE FINAL</h2>
+            <h3>Aqui el mecanismo es similar al de octavos de final, tienes que hacer click en los 4 equipos que
+                llegaran a las SEMIFINALES!.</h3>
         </div>
+        
         <div class="cuartos" id="cuartos">
             <div class="partidos-cuartos">
                 <p class="texto-cuartos" onclick="semis1 ()"></p><span>VS</span>
@@ -169,10 +176,12 @@
             </div>
         </div>
         <div class="explicaciones">
-            <h2>CUARTOS DE FINAL</h2>
-            <h3>Aqui el mecanismo es similar al de octavos de final, tienes que hacer click en los 4 equipos que
-                llegaran a las SEMIFINALES!.</h3>
+            <h2>SEMIFINALES!!</h2>
+            <h3>Solo los 4 mejores equipos del mundo estan en esta zona, y ya la decision es mas dificil, por lo tanto
+                tambien tienes que volverte un profesional y arriesgar el resultado de cada partido, luego haz click en
+                el boton "clasificacion" para llegar a la final!.</h3>
         </div>
+        
         <div class="semi" id="semi">
             <div class="partidos-semi">
                 <p class="texto-semi"></p><input type="text" class="input-semi"><span>VS</span>
@@ -184,14 +193,14 @@
             </div>
 
         </div>
-        <input type="submit" value="Clasificacion" class="clasificacion" style="margin-bottom: 20px;"
+        <input type="submit" value="Clasificacion" class="clasificacion" style="margin-bottom: 20px;background-color: blue;"
             onclick="clasificacionSemi ()">
-        <div class="explicaciones">
-            <h2>SEMIFINALES!!</h2>
-            <h3>Solo los 4 mejores equipos del mundo estan en esta zona, y ya la decision es mas dificil, por lo tanto
-                tambien tienes que volverte un profesional y arriesgar el resultado de cada partido, luego haz click en
-                el boton "clasificacion" para llegar a la final!.</h3>
-        </div>
+            <div class="explicaciones">
+                <h2>Final!!</h2>
+                <h3>Debes arriesgar los resultados de la final como tambien del partido por el tercer y cuarto puesto, luego
+                    reclama la copa para ver el podio!, gracias por participar.</h3>
+            </div>
+        
         <div class="fase-final" id="fase-final">
             <div class="tercero final" id="tecero">
                 <div class="partido-tercero p-f">
@@ -209,12 +218,8 @@
 
 
         </div>
-        <div class="explicaciones">
-            <h2>Final!!</h2>
-            <h3>Debes arriesgar los resultados de la final como tambien del partido por el tercer y cuarto puesto, luego
-                reclama la copa para ver el podio!, gracias por participar.</h3>
-        </div>
-        <div class="campeon"><button style="width: 100%; height:100%;" onclick="finalPartido ()">Reclamar la Copa</button></div>
+        
+        <div class="campeon"><button style="width: 100%; height:100%; background-color: red;" onclick="finalPartido ()">Reclamar la Copa</button></div>
 
 
     </main>

@@ -62,15 +62,22 @@ function armar5() {
 //---------------------------------------------------BANDERAS--------------------------------------------------------------------------
 
 let seleccionesNombre0 = document.getElementById("selecciones-nombre0");
-let seleccionesNombre1 = document.getElementById("selecciones-nombre1");
-let seleccionesNombre2 = document.getElementById("selecciones-nombre2");
-let seleccionesNombre3 = document.getElementById("selecciones-nombre3");
-let seleccionesNombre4 = document.getElementById("selecciones-nombre4");
-let seleccionesNombre5 = document.getElementById("selecciones-nombre5");
-let seleccionesNombre6 = document.getElementById("selecciones-nombre6");
-let seleccionesNombre7 = document.getElementById("selecciones-nombre7");
-let seleccionesNombre8 = document.getElementById("selecciones-nombre8");
+let seleccionesNombre1 = document.getElementById("selecciones-nombre2");
+let seleccionesNombre2 = document.getElementById("selecciones-nombre4");
+let seleccionesNombre3 = document.getElementById("selecciones-nombre6");
+let seleccionesNombre4 = document.getElementById("selecciones-nombre8");
+let seleccionesNombre5 = document.getElementById("selecciones-nombre1");
+let seleccionesNombre6 = document.getElementById("selecciones-nombre3");
+let seleccionesNombre7 = document.getElementById("selecciones-nombre5");
+let seleccionesNombre8 = document.getElementById("selecciones-nombre7");
 let seleccionesNombre9 = document.getElementById("selecciones-nombre9");
+
+const divApintar = document.querySelectorAll(".check")
+divApintar.forEach((pintarbandera) => {
+    pintarbandera.addEventListener('click', banderas);
+}
+);
+let resul;
 
 function banderas() {
     function banderasNombres(pais0, pais1, pais2, pais3, pais4, pais5, pais6, pais7, pais8, pais9) {
@@ -101,52 +108,23 @@ function banderas() {
         pais0, pais1, pais2, pais3, pais4, pais5, pais6, pais7, pais8, pais9
     );
     pintar();
-    pais0=="Portugal"||pais0=="portugal" ? seleccionesNombre0.innerHTML = datosIngresados.bandera0 + " ✓" : false;
-    pais1=="alemania"||pais1=="Alemania" ? seleccionesNombre1.innerHTML = datosIngresados.bandera1 + " ✓" : false;
-    pais2=="brasil"||pais2=="Brasil" ? seleccionesNombre2.innerHTML = datosIngresados.bandera2 + " ✓" : false;
-    pais3=="egipto"||pais3=="Egipto" ? seleccionesNombre3.innerHTML = datosIngresados.bandera3 + " ✓" : false;
-    pais4=="francia"||pais4=="Francia" ? seleccionesNombre4.innerHTML = datosIngresados.bandera4 + " ✓" : false;
-    pais5=="japon"||pais5=="Japon" ? seleccionesNombre5.innerHTML = datosIngresados.bandera5 + " ✓" : false;
-    pais6=="panama"||pais6=="Panama" ? seleccionesNombre6.innerHTML = datosIngresados.bandera6 + " ✓" : false;
-    pais7=="senegal"||pais7=="Senegal" ? seleccionesNombre7.innerHTML = datosIngresados.bandera7 + " ✓" : false;
-    pais8=="suecia"||pais8=="Suecia" ? seleccionesNombre8.innerHTML = datosIngresados.bandera8 + " ✓" : false;
-    pais9=="uruguay"||pais9=="Uruguay" ? seleccionesNombre9.innerHTML = datosIngresados.bandera9 + " ✓" : false;
-
+    pais0=="Portugal"||pais0=="portugal" ? (seleccionesNombre0.innerHTML = datosIngresados.bandera0 + " ✓", resul=true) : resul=false ;
+    pais1=="alemania"||pais1=="Alemania" ? (seleccionesNombre1.innerHTML = datosIngresados.bandera1 + " ✓", resul=true): resul=false;
+    pais2=="brasil"||pais2=="Brasil" ? (seleccionesNombre2.innerHTML = datosIngresados.bandera2 + " ✓", resul=true): resul=false;
+    pais3=="egipto"||pais3=="Egipto" ? (seleccionesNombre3.innerHTML = datosIngresados.bandera3 + " ✓", resul=true): resul=false;
+    pais4=="francia"||pais4=="Francia" ? (seleccionesNombre4.innerHTML = datosIngresados.bandera4 + " ✓", resul=true): resul=false;
+    pais5=="japon"||pais5=="Japon" ? (seleccionesNombre5.innerHTML = datosIngresados.bandera5 + " ✓", resul=true): resul=false;
+    pais6=="panama"||pais6=="Panama" ? (seleccionesNombre6.innerHTML = datosIngresados.bandera6 + " ✓", resul=true): resul=false;
+    pais7=="senegal"||pais7=="Senegal" ? (seleccionesNombre7.innerHTML = datosIngresados.bandera7 + " ✓", resul=true): resul=false;
+    pais8=="suecia"||pais8=="Suecia" ? (seleccionesNombre8.innerHTML = datosIngresados.bandera8 + " ✓", resul=true): resul=false;
+    pais9=="uruguay"||pais9=="Uruguay" ? (seleccionesNombre9.innerHTML = datosIngresados.bandera9 + " ✓", resul=true): resul=false;
+    resul==true ? swal("Muy Bien!", "Sabes mucho de banderas!!", "success"):false;
 }
 let datosEnviados = [];
+
 function pintar() {
     datosEnviados.push(datosIngresados);
 }
 
-function reglas() {
-    swal({
-        title: "Estas listo/a???",
-        text: "Vamos a poner a prueba tus conocimientos",
-        icon: "warning",
-        buttons: true,
-        dangerMode: true,
-    })
-        .then((willDelete) => {
-            if (willDelete) {
-                swal("Debes escribir a que pais pertenece cada bandera debajo de cada una de ellas, la primera letra en mayuscula y sin acentos! BUENA SUERTE!!", {
-                    icon: "success",
-                });
-            } else {
-                swal("Deberas esforzarte mas para estar en la Scaloneta");
-            }
-        });
-}
-const listado = document.querySelector(".listado-ul");
-fetch('jugadores.json')
-.then ( (resp) => resp.json() )
-.then ( (data) => {
-    data.forEach ((post) => {
-        const Lista = document.createElement('li');
-        Lista.innerHTML = `
-        <h3>${post.nombre}<h3>
-        <h3>${post.numero}<h3>
-        `;
-        listado.append(Lista);
-    });
-} );
+
 

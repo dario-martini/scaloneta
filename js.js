@@ -1,4 +1,9 @@
 alert ("Bienvenido/a, haz click en el Avatar para informarte como funciona la Scaloneta, que te diviertas!");
+
+//-----------------------------------------BOTONES FUNCIONES----------------------------------------------------
+const tecnicoAvatar = document.querySelector(".entrenador-sel");
+tecnicoAvatar.addEventListener('click', tecnico);
+
 //-------------------------------------LUCES DE LA SCALONETA------------------------------------------------
 
 
@@ -136,6 +141,18 @@ function dibu() {
     swal("Buena elección!", "El mejor arquero del Mundo!!", "success");
     console.log(dibuM);
 }
-
+const listado = document.querySelector(".listado-ul");
+fetch('jugadores.json')
+.then ( (resp) => resp.json() )
+.then ( (data) => {
+    data.forEach ((post) => {
+        const Lista = document.createElement('li');
+        Lista.innerHTML = `
+        <h3>${post.nombre}<h3>
+        <h3>${post.numero}<h3>
+        `;
+        listado.append(Lista);
+    });
+} );
 
 

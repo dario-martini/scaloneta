@@ -115,11 +115,18 @@ img {
 }
 .caja-selecciones-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .caja-selecciones {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.selecciones-pintadas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    margin-top: 80px;
 }
 .selecciones {
     width: 20vw;
@@ -127,6 +134,7 @@ img {
     background-color: transparent;
     margin: auto;
     margin-top: 50px;
+    border: solid 2px white;
 }
 .resultado--selecciones {
     background-color: rgb(255, 2, 2);
@@ -170,6 +178,7 @@ a {
     display: none;
 }
 .nom-selecc{
+    color: white;
     margin-top: 20px;
     font-size: xx-large;
     text-align: center;
@@ -327,4 +336,8 @@ a {
 .listado-ul li {
     border: solid 2px black;
     background-color: aqua;
+}
+.check {
+    width: 30px;
+    background-color: green;
 }

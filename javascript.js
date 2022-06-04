@@ -101,50 +101,23 @@ function banderas() {
         pais0, pais1, pais2, pais3, pais4, pais5, pais6, pais7, pais8, pais9
     );
     pintar();
-    seleccionesNombre0.innerHTML = datosIngresados.bandera0;
-    seleccionesNombre1.innerHTML = datosIngresados.bandera1;
-    seleccionesNombre2.innerHTML = datosIngresados.bandera2;
-    seleccionesNombre3.innerHTML = datosIngresados.bandera3;
-    seleccionesNombre4.innerHTML = datosIngresados.bandera4;
-    seleccionesNombre5.innerHTML = datosIngresados.bandera5;
-    seleccionesNombre6.innerHTML = datosIngresados.bandera6;
-    seleccionesNombre7.innerHTML = datosIngresados.bandera7;
-    seleccionesNombre8.innerHTML = datosIngresados.bandera8;
-    seleccionesNombre9.innerHTML = datosIngresados.bandera9;
+    pais0=="Portugal"||pais0=="portugal" ? seleccionesNombre0.innerHTML = datosIngresados.bandera0 + " ✓" : false;
+    pais1=="alemania"||pais1=="Alemania" ? seleccionesNombre1.innerHTML = datosIngresados.bandera1 + " ✓" : false;
+    pais2=="brasil"||pais2=="Brasil" ? seleccionesNombre2.innerHTML = datosIngresados.bandera2 + " ✓" : false;
+    pais3=="egipto"||pais3=="Egipto" ? seleccionesNombre3.innerHTML = datosIngresados.bandera3 + " ✓" : false;
+    pais4=="francia"||pais4=="Francia" ? seleccionesNombre4.innerHTML = datosIngresados.bandera4 + " ✓" : false;
+    pais5=="japon"||pais5=="Japon" ? seleccionesNombre5.innerHTML = datosIngresados.bandera5 + " ✓" : false;
+    pais6=="panama"||pais6=="Panama" ? seleccionesNombre6.innerHTML = datosIngresados.bandera6 + " ✓" : false;
+    pais7=="senegal"||pais7=="Senegal" ? seleccionesNombre7.innerHTML = datosIngresados.bandera7 + " ✓" : false;
+    pais8=="suecia"||pais8=="Suecia" ? seleccionesNombre8.innerHTML = datosIngresados.bandera8 + " ✓" : false;
+    pais9=="uruguay"||pais9=="Uruguay" ? seleccionesNombre9.innerHTML = datosIngresados.bandera9 + " ✓" : false;
 
 }
 let datosEnviados = [];
 function pintar() {
     datosEnviados.push(datosIngresados);
-    ingresado();
 }
-function ingresado() {
-    let nombreIngresado = datosIngresados;
-    if (nombreIngresado.bandera0 == "Portugal",
-        nombreIngresado.bandera1 == "Alemania",
-        nombreIngresado.bandera2 == "Brasil",
-        nombreIngresado.bandera3 == "Egipto",
-        nombreIngresado.bandera4 == "Francia",
-        nombreIngresado.bandera5 == "Japon",
-        nombreIngresado.bandera6 == "Panama",
-        nombreIngresado.bandera7 == "Senegal",
-        nombreIngresado.bandera8 == "Suecia",
-        nombreIngresado.bandera9 == "Uruguay"
-    ) {
-        resultadoBanderas = "si";
-    }
-    agregar();
-}
-let resultadoBanderas = [];
 
-function agregar() {
-    if (resultadoBanderas == "si") {
-        swal("Buen Trabajo", "sigue asi!", "success");
-    }
-    else {
-        swal("Uuupss", "Controla bien las respuestas", "error");
-    }
-}
 function reglas() {
     swal({
         title: "Estas listo/a???",
